@@ -1,6 +1,11 @@
+
+
+<img width="3600" height="800" alt="logo" src="https://github.com/user-attachments/assets/bbb5a9f5-3213-490c-826b-411e4fd97767" />
+
 # AI-based-Financial-Credibility-Analyser
 
 ---
+
 
 ## Enviroment Variables
 ```
