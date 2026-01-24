@@ -1,0 +1,55 @@
+{% extends "login/base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+    <br><br><br>
+<div class="auth-form">
+
+    <h2>Create Account</h2>
+    <p>Start your KYC verification journey</p>
+    
+    <form method="post" action=" {{ url_for('register_user') }}"  id="registerForm" >
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="sample@sample.com" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="+91 12*******9" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Create a strong password" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+        
+        <div class="form-check">
+            <input type="checkbox" name="terms" id="terms" required>
+            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+        </div>
+        
+        <button type="submit" class="btn2">Create Account</button>
+    </form>
+    
+    <div class="auth-footer">
+        <p>Already have an account? <a href="{{ url_for('login_page') }}">Sign in</a></p>
+    </div>
+</div>
+{% endblock %}
