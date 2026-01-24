@@ -1,6 +1,8 @@
 # AI-based-Financial-Credibility-Analyser
+
 ---
-** Enviroment Variables **
+
+## Enviroment Variables
 ```
 AZURE_STORAGE_CONNECTION_STRING = ""
 AZURE_FORMRECOGNIZER_ENDPOINT = ""
